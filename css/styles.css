@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fd7e14;
+}
+
+.navbar a{
+     color: #ffffff;
+     padding: 14px 20px;
+     text-decoration: none;
+     text-align: center;
+ }
+
+.navbar a:hover {
+     background-color: #28a745;
+ }
+ .exit_account{
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+ }
+ .exit_account:hover{
+    background-color: #28a745;
+ }
+
+ .container {
+     width: 80%;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ .welcome {
+    text-align: center;
+    margin-top: 10px;
+ }
+
+
+ .section-links {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+ }
+
+ .section-links a {
+     display: inline-block;
+     margin: 10px;
+     padding: 10px 20px;
+     background-color: #f4f4f4;
+     color: #333;
+     text-decoration: none;
+     border-radius: 5px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+ .section-links a:hover {
+    background-color: #776f6f;
+    color: #f4f4f4;
+ }
+
+ .check_cart{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+ }
+ .check_cart:hover{
+     background-color: #776f6f;
+     color: #f4f4f4;
+ }
+ .cart{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+  .cart-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-description {
+      max-height: 3em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  .product-image {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 10px;
+      margin-right: 10px;
+  }
+
+  .product-details {
+      display: flex;
+      align-items: center;
+  }
+
+/* Галерея */
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+@keyframes slide {
+0% {
+    transform: translateX(0);
+}
+
+33% {
+    transform: translateX(-100%);
+}
+
+66% {
+    transform: translateX(-200%);
+}
+
+100% {
+    transform: translateX(0);
+}
+}
+
+/* Розклад занять */
+.schedule-container {
+    text-align: center;
+}
+
+.date-navigation {
+    margin: 20px 0;
+}
+
+.schedule-table {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+}
+
+/* Тренера */
+.trainer-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.trainer-card-header{
+    display: flex;
+}
+
+.trainer-card-img{
+    max-width: 25%;
+    border-radius: 25%;
+    padding-right: 25px; 
+}
+
+.trainer-card h2 {
+    margin-top: 0;
+}
+
+.lesson-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lesson-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Блог */
+.article-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h2 {
+    margin-top: 0;
+}
+ .blog-button a {
+     margin: 10px;
+     padding: 10px 20px;
+     background-color: #e2dcdc;
+     color: #464343;
+     text-decoration: none;
+     border-radius: 5px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .blog-button a:hover {
+     background-color: #776f6f;
+     color: #f4f4f4;
+ }
+ .blog-photo{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+ }
+
+ /* User */
+ .container-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .video {
+    opacity: 1;
+    transition: opacity .15s ease;
+    max-height: 590px;
+ }
+
+ /* Адмін інтернет магазину */
+.order-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h2 {
+    margin-top: 0;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+}
+
+.filter-form select,
+.filter-form button {
+    padding: 10px;
+    margin-right: 10px;
+}
